@@ -19,4 +19,4 @@ Still to be done:
 
 The following image shows the page in the current state:
 
-![](./Screen%20Shot%202022-07-07%20at%2010.17.12%20PM.png)
+![](./Develop/Screen%20Shot%202022-07-07%20at%2010.17.12%20PM.png)
