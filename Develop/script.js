@@ -23,9 +23,6 @@ for (var index = 0; index < textAreas.length; index++) {
 
 }
 
-//saveBtn at end of each row
-
-
 //Delete Tasks
 
 //local storage for Timeblock events
