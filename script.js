@@ -16,30 +16,38 @@ for (var index = 0; index < textAreas.length; index++) {
     // console.log(element);
     // element.style.backgroundColor = "red";
     // console.log($(element).siblings());
-    var rowSlotTime = $(element).siblings(".hour").attr('id');
-    console.log(rowSlotTime);
-    var timeblockHour = moment(rowSlotTime, "HH:mm");
-    console.log(timeblockHour);
+    var rowSlotTime = $(element).siblings(".hour").attr('id').split('');
+    var timeBlock = parseInt(rowSlotTime[0] + rowSlotTime[1])
 
-//If less than, equal to, or more than currentHour, it will change color (if, else if, else)
-    if (rowSlotTime) {
-        rowSlotTime < currentHour = element.style.backgroundColor = ".past";
+    //If less than, equal to, or more than currentHour, it will change color (if, else if, else)
+    if (timeBlock < currentHour) {
+        $(element).addClass('past')
+    } else if (timeBlock === currentHour) {
+        $(element).addClass('present')
+    } else {
+        $(element).addClass('future')
     }
 }
-
-//Delete Tasks
 
 //local storage for Timeblock events
 
  $('.saveBtn').on('click', function() {
-    var value = $(this).siblings('.description').val();
-    var time = $(this).parent().attr('id');
+    var value = $(this).siblings('.time-block').val();
 
-     console.log(value,time);
+    var rowSlotTime = $(this).siblings(".hour").attr('id').split('');
+    var time = parseInt(rowSlotTime[0] + rowSlotTime[1])
+
+     console.log(value, time);
+
+    localStorage.setItem(time, value);
+
  })
 
-var timeblockTasks = function() {
-    tasks = JSON.parse(localStorage.getItem("tasks"));
-}
+// var timeblockTasks = function() {
+//     tasks = JSON.parse(localStorage.getItem("tasks"));
+// }
+console.log(localStorage.getItem('10'))
+$('#10AM').siblings('.time-block').val(localStorage.getItem('10'));
+
 
 currentDay()
