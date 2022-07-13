@@ -13,9 +13,6 @@ currentDate.textContent = moment().format("MMM Do YY");
 
 for (var index = 0; index < textAreas.length; index++) {
     var element = textAreas[index];
-    // console.log(element);
-    // element.style.backgroundColor = "red";
-    // console.log($(element).siblings());
     var rowSlotTime = $(element).siblings(".hour").attr('id').split('');
     var timeBlock = parseInt(rowSlotTime[0] + rowSlotTime[1])
 

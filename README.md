@@ -9,12 +9,9 @@ Process:
 4. Used Moment.js to add time to top of page. 
 5. Created rows for time-block tasks. 
 6. Began JS script to make site function
-
-Still to be done:
-1. Complete JS script so that tasks are color-coded by past, present, and future.
-2. Save tasks to local Storage. 
-3. Give user ability to delete tasks
-4. Fix deployed Site (it is picking up the readME instead of the HTML)
+7. Complete JS script so that tasks are color-coded by past, present, and future.
+8. Save tasks to local Storage. 
+9. Give user ability to edit tasks
 
 
 The following image shows the page in the current state:
