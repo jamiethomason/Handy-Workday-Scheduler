@@ -43,11 +43,15 @@ for (var index = 0; index < textAreas.length; index++) {
 
  })
 
-// var timeblockTasks = function() {
-//     tasks = JSON.parse(localStorage.getItem("tasks"));
-// }
-console.log(localStorage.getItem('10'))
+$('#09AM').siblings('.time-block').val(localStorage.getItem('09'));
 $('#10AM').siblings('.time-block').val(localStorage.getItem('10'));
+$('#11AM').siblings('.time-block').val(localStorage.getItem('11'));
+$('#12PM').siblings('.time-block').val(localStorage.getItem('12'));
+$('#13PM').siblings('.time-block').val(localStorage.getItem('13'));
+$('#14PM').siblings('.time-block').val(localStorage.getItem('14'));
+$('#15PM').siblings('.time-block').val(localStorage.getItem('15'));
+$('#16PM').siblings('.time-block').val(localStorage.getItem('16'));
+$('#17PM').siblings('.time-block').val(localStorage.getItem('17'));
 
 
 currentDay()
